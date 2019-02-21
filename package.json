@@ -29,8 +29,8 @@
     "dist"
   ],
   "dependencies": {
-    "builtin-modules": "^1.1.0",
-    "enhanced-resolve": "^3.1.0",
+    "builtin-modules": "^3.0.0",
+    "enhanced-resolve": "^4.1.0",
     "is-module": "^1.0.0"
   },
   "repository": "rollup/rollup-plugin-node-resolve",
