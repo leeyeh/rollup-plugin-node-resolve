@@ -37,7 +37,7 @@ export default function nodeResolve ( options = {} ) {
 		name: 'node-resolve',
 
 		resolveId ( importee, importer ) {
-			if ( /\0/.test( importee ) ) return null; // ignore IDs with null character, these belong to other plugins
+			if ( /\0/.test( importee ) || /\0/.test( importer ) ) return null; // ignore IDs with null character, these belong to other plugins
 
 			// disregard entry module
 			if ( !importer ) return null;
